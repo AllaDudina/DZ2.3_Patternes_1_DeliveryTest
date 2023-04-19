@@ -1,0 +1,1 @@
+https://ci.appveyor.com/api/projects/status/v3f1ugbh459gu0mp/branch/master
