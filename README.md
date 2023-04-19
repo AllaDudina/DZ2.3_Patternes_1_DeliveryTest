@@ -1,1 +1,1 @@
-https://ci.appveyor.com/api/projects/status/v3f1ugbh459gu0mp/branch/master
+[![Build status](https://ci.appveyor.com/api/projects/status/v3f1ugbh459gu0mp/branch/master?svg=true)](https://ci.appveyor.com/project/AllaDudina/dz2-3-patternes-1-deliverytest/branch/master)
