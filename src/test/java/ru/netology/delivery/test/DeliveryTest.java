@@ -42,21 +42,8 @@ class DeliveryTest {
         $("[data-test-id='date'] input").setValue(secondMeetingDate);
         $(".button").click();
         $("[data-test-id='replan-notification'] button").click();
-        $(".notification__content").shouldHave(Condition.text(secondMeetingDate), Duration.ofSeconds(4));
-
-
-
-
-
-
-
-
-
-
-        // TODO: добавить логику теста в рамках которого будет выполнено планирование и перепланирование встречи.
-        // Для заполнения полей формы можно использовать пользователя validUser и строки с датами в переменных
-        // firstMeetingDate и secondMeetingDate. Можно также вызывать методы generateCity(locale),
-        // generateName(locale), generatePhone(locale) для генерации и получения в тесте соответственно города,
-        // имени и номера телефона без создания пользователя в методе generateUser(String locale) в датагенераторе
+        $("[data-test-id=success-notification] .notification__content")
+                .shouldHave(Condition.text("Встреча успешно запланирована на " + secondMeetingDate), Duration.ofSeconds(15))
+                .shouldBe(Condition.visible);
     }
 }
